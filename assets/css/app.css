@@ -1,3 +1,10 @@
+@import "reset.css";
+@import "contact.css";
+@import "home.css";
+@import "mywork.css";
+@import "projects.css";
+
+
 body {
   margin: 0;
   background: #101010;
@@ -35,12 +42,13 @@ body {
 .project-header a:hover img {
   margin: 50px;
   filter: blur(8px);
-  height: 300px;
+  max-height: 300px;
 }
 
 .project-header a img {
   margin: 100px;
-  height: 200px;
+  max-height: 200px;
+  width: auto;
   transition: all 250ms;
   content: url("/images/placeholder.jpg");
 }

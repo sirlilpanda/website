@@ -20,6 +20,7 @@ defmodule SiteWeb.Router do
     get "/", HomeController, :index
     get "/projects", ProjectsController, :index
     get "/projects/:id", ProjectsController, :show
+    get "/mywork", MyworkController, :index
 
   end
 

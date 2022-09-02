@@ -7,6 +7,7 @@ body {
   margin: 0;
   background: #101010;
   font-family: monospace;
+  grid-column: auto;
 }
 
 @layer utilities {
@@ -35,11 +36,31 @@ body {
     }
 
     .project-img{
-    	@apply m-[100px] max-h-[200px] w-auto
+    	@apply m-[100px] max-h-[300px] w-auto transition-all duration-200
+    }
+
+    .project-img-hov{
+      @apply m-[50px] blur-[8px] max-h-[400px]
     }
 
     .project-p1{
-		@apply text-transparent text-xs p-0 absolute blur-[2px] top-1/2 left-1/2 transform-5050
+		  @apply text-transparent text-xs p-0 absolute blur-[2px] top-1/2 left-1/2 transform-5050 transition-all duration-200
+    }
+
+    .project-p1-hov{
+      @apply text-amber-100 filter-none text-3xl
+    }
+
+    .home-p{
+      @apply text-2xl text-amber-100  text-center
+    }
+
+    .tech-header{
+      @apply text-2xl text-rose-500
+    }
+
+    .tech-container{
+      @apply mt-10 grid w-screen place-items-center 
     }
 
 }

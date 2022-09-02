@@ -1,2 +1,60 @@
-<h1>testing</h1>
-<p1>i made a discord bot</p1>
+<section>
+    <div class="pt-20 flex items-center justify-center w-screen">
+        <div>
+            <h1 class="text-6xl text-yellow-100 text-center">Discord bot:</h1>
+            <p class="text-2xl text-yellow-100 pt-10 w-[800px] text-justify">
+                A quick bit of background on what a discord and in turn a discord bot actually is.
+                Discord is a social platfrom that allows for users from around the world to create
+                a Discord server that allow for communication through both text and voice. using
+                this premise these communities could grow quite large so some automation was added
+                in the form of a bot API that could then automate tasks on the server like admin work
+                and even playing music.
+            </p>
+            <p class="text-2xl text-yellow-100 pt-10 w-[800px] text-justify">
+                 Utlising this bot api I created a bot for my university's ECE dicord server, as a
+                 python library was shown in one of the lectures called lcapy which allows a user
+                 to input a string a receive a circuit diagram in return. This seemed quite useful
+                 when drawing basic circuits for reports and such.
+            </p>
+            <p class="text-2xl text-yellow-100 pt-10 w-[800px] text-justify">
+                although when attempting to use this library i noticed that alot of external
+                programs were require, with the main one being some form of 
+                <a href="https://en.wikipedia.org/wiki/TeX" class="text-blue-800">TeX</a>
+                editor like laTeX or such of the like. Due to this i knew not many people would want
+                to or know how to install something like this. Therefor i decided to create the 
+                discord bot to allow people to easily utlise this powerful library 
+            </p>
+            <div class="pt-20">
+                <img src="/images/discord_bot_example1.png" class="ml-[150px] max-w-full h-auto rounded-3xl">
+            </div>
+            <p class="text-xl text-yellow-100 text-center">Example of bot command</p>
+
+            <p class="text-2xl text-yellow-100 pt-10 w-[800px] text-justify">
+                so as can be seen here the bot command consist of the command identifier
+                <span class="bg-gray-800 rounded-full">"!circuit"</span>, with the actual
+                string to be processed in to a circuit, you can also notice a queue postion point
+                this was done so if one request was being processed and someone else placed a
+                request the code would not crash and burn, alought the implmention is not prefect,
+                but the code is robust enough even if it does error it wont completely crash
+            </p>
+
+            <div class="pt-20">
+                <img src="\images\discord_bot_example2.png" class="ml-[150px] max-w-full h-auto rounded-3xl">
+            </div>
+            <p class="text-xl text-yellow-100 text-center">Another example of bot command</p>
+        
+            <p class="text-2xl text-yellow-100 pt-10 w-[800px] text-justify">
+                As you can see in this example the discord bot can also accpet an input file just
+                by encluding a file flag
+            </p>
+
+            <p class="text-2xl text-yellow-100 pt-10 w-[800px] text-justify">
+                all source code of this bot can be found on my github <a class="text-blue-700"href="https://github.com/sirlilpanda/lcapy_discord_bot">here</a>
+            </p>
+
+        </div>
+
+    
+    </div>
+
+</section>

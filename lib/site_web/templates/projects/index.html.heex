@@ -1,56 +1,67 @@
 <section>
-  <h1 class="text-5xl text-amber-100 text-center mx-auto w-screen pt-20">Projects</h1>
-      <div class="mx-auto my-0">
-          <nav class="mt-20 float-left relative text-center">
-            <ul class="m-0 p-0 list-none">
-              <li class="project-li"><a class="group project-aref" href="projects/discord_bot">
-                      <img class="project-img transition-all duration-200 group-hover:m-[50px] group-hover:blur-[8px] group-hover:max-h-[300px]" src="/images/placeholder.jpg">
-                      <p1 class="project-p1 transition-all duration-200 group-hover:text-amber-100 group-hover:filter-none group-hover:text-3xl">discord_bot</p1>
-                  </a>
-              </li>
+    <h1 class="text-5xl text-amber-100 text-center mx-auto w-screen pt-20">Projects:</h1>
+        <div class="mx-auto my-0 h-max">
+            <nav class="mt-20 float-left relative text-center">
+                <ul class="m-0 p-0 list-none">
 
-              <li class="project-li"><a class="group bg-transparent" href="projects/terminal_graphics">
-                      <img class="project-img transition-all duration-200 group-hover:m-[50px] group-hover:blur-[8px] group-hover:max-h-[300px]" src="/images/placeholder.jpg">
-                      <p1 class="project-p1 transition-all duration-200 group-hover:text-amber-100 group-hover:filter-none group-hover:text-3xl">terminal_graphics</p1>
-                  </a>
-              </li>
+                <%= project_card(
+                                assigns,
+                                "discord_bot",
+                                "/images/placeholder.jpg",
+                                "projects/discord_bot"
+                ) %>
 
-              <li class="project-li"><a class="group bg-transparent" href="projects/this_website">
-                      <img class="project-img transition-all duration-200 group-hover:m-[50px] group-hover:blur-[8px] group-hover:max-h-[300px]" src="/images/placeholder.jpg">
-                      <p1 class="project-p1 transition-all duration-200 group-hover:text-amber-100 group-hover:filter-none group-hover:text-3xl">this.website</p1>
-                  </a>
-              </li>
+                <%= project_card(
+                                assigns,
+                                "terminal_graphics",
+                                "/images/placeholder.jpg",
+                                "projects/terminal_graphics"
+                ) %>
 
-              <li class="project-li"><a class="group bg-transparent" href="projects/steno_keyboard">
-                      <img class="project-img transition-all duration-200 group-hover:m-[50px] group-hover:blur-[8px] group-hover:max-h-[300px]" src="/images/placeholder.jpg">
-                      <p1 class="project-p1 transition-all duration-200 group-hover:text-amber-100 group-hover:filter-none group-hover:text-3xl">steno_keyboard</p1>
-                  </a>
-              </li>
+                <%= project_card(
+                                assigns,
+                                "this.website",
+                                "/images/placeholder.jpg",
+                                "projects/this.website"
+                ) %>
 
-              <li class="project-li"><a class="group bg-transparent" href="projects/home_lab">
-                      <img class="project-img transition-all duration-200 group-hover:m-[50px] group-hover:blur-[8px] group-hover:max-h-[300px]" src="/images/placeholder.jpg">
-                      <p1 class="project-p1 transition-all duration-200 group-hover:text-amber-100 group-hover:filter-none group-hover:text-3xl">home_lab</p1>
-                  </a>
-              </li>
+                <%= project_card(
+                                assigns,
+                                "steno_keyboard",
+                                "/images/placeholder.jpg",
+                                "projects/steno_keyboard"
+                ) %>
 
-              <li class="project-li"><a class="group bg-transparent" href="projects/jewellery">
-                      <img class="project-img transition-all duration-200 group-hover:m-[50px] group-hover:blur-[8px] group-hover:max-h-[300px]" src="/images/placeholder.jpg">
-                      <p1 class="project-p1 transition-all duration-200 group-hover:text-amber-100 group-hover:filter-none group-hover:text-3xl">jewellery</p1>
-                  </a>
-              </li>
+                <%= project_card(
+                                assigns,
+                                "home_lab",
+                                "/images/placeholder.jpg",
+                                "projects/home_lab"
+                ) %>
 
-              <li class="project-li"><a class="group bg-transparent" href="projects/cooking">
-                      <img class="project-img transition-all duration-200 group-hover:m-[50px] group-hover:blur-[8px] group-hover:max-h-[300px]" src="/images/placeholder.jpg">
-                      <p1 class="project-p1 transition-all duration-200 group-hover:text-amber-100 group-hover:filter-none group-hover:text-3xl">cooking</p1>
-                  </a>
-              </li>
+                <%= project_card(
+                                assigns,
+                                "jewellery",
+                                "/images/placeholder.jpg",
+                                "projects/jewellery"
+                ) %>
 
-              <li class="project-li"><a class="group bg-transparent" href="projects/tiny_house/0">
-                      <img class="project-img transition-all duration-200 group-hover:m-[50px] group-hover:blur-[8px] group-hover:max-h-[300px]" src="/images/placeholder.jpg">
-                      <p1 class="project-p1 transition-all duration-200 group-hover:text-amber-100 group-hover:filter-none group-hover:text-3xl">tiny_house</p1>
-                  </a>
-              </li>
+                <%= project_card(
+                                assigns,
+                                "cooking",
+                                "/images/cooking.png",
+                                "projects/cooking"
+                ) %>
+
+                <%= project_card(
+                                assigns,
+                                "tiny_house",
+                                "/images/placeholder.jpg",
+                                "projects/tiny_house"
+                ) %>
+
             </ul>
           </nav>
       </div>
+      <div></div>
 </section>

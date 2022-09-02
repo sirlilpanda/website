@@ -9,20 +9,29 @@
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
   </head>
-  <body>
-    <header class="bg-pink-500 after:content">
+  <body class="flex flex-col h-screen justify-between">
+    <header class="bg-pink-500 after:content rounded-lg">
       <div class="pb-16">
         <h1 class="text-4xl px-3 pt-3 float-left bg-pink-500">Sir lil Pandas</h1>
         <nav class="float-right">
           <ul class="mx-0 px-7 bg-pink-500">
-            <li class="navli group"><div class="navdiv group-hover:bg-black group-hover:w-full transition-all duration-200"></div><a class="nava" href="/">Home()</a></li>
-            <li class="navli group"><div class="navdiv group-hover:bg-black group-hover:w-full transition-all duration-200"></div><a class="nava" href="/mywork">My_work()</a></li>
-            <li class="navli group"><div class="navdiv group-hover:bg-black group-hover:w-full transition-all duration-200"></div><a class="nava" href="/projects">projects()</a></li>
-            <li class="navli group"><div class="navdiv group-hover:bg-black group-hover:w-full transition-all duration-200"></div><a class="nava" href="#">Contact()</a></li>
+            <%= nav_bar_element assigns, "/", "Home()" %>
+            <%= nav_bar_element assigns, "/#about_me", "About_me()" %>
+            <%= nav_bar_element assigns, "/mywork", "My_work()" %>
+            <%= nav_bar_element assigns, "/projects", "projects()" %>
+            <%= nav_bar_element assigns, "/#contact", "Contact()" %>
           </ul>
         </nav>
       </div>
     </header>
+    
     <%= @inner_content %>
+    <footer>
+      <div class="mt-20 mx-auto bg-pink-500 rounded-lg">
+        <div class="max-h-20">
+          <p class="py-5 pl-5 "><a class="px-3 text-center text-lg text-zinc-700 hover:text-black hover:bg-violet-500 rounded-full transition-all duration-200" href="https://grungesniper.carrd.co/">All artworks by GrungeSniper</a></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

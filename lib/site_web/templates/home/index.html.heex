@@ -1,15 +1,94 @@
 <section>
-    <div class="float-left pt-80 pl-60">
-        <p class="text-amber-100 text-4xl">
-            Hi!! , I'm
-        </p>
-        <h1 class="text-rose-600 text-5xl pl-20 pt-10 pb-14">
-            Logan Henderson.
-        </h1>
-        <p class="text-amber-100 text-4xl">
-            developer 🧑‍💻 | maker 🛠️ | amateur chef 🍳
-        </p>
+    <div class="flex items-center justify-center w-screen pb-60">
+        <div class="float-left pt-80">
+            <p class="text-amber-100 text-4xl">
+                Hi!! , I'm
+            </p>
+            <h1 class="text-rose-600 text-5xl pl-20 pt-10 pb-14">
+                Logan Henderson.
+            </h1>
+            <p class="text-amber-100 text-4xl">
+                developer 🧑‍💻 | maker 🛠️ | amateur chef 🍳
+            </p>
+        </div>
+
+        <img src="\images\placeholder.jpg" class="float-right pl-12 pt-60"/>
     </div>
 
-    <img src="\images\placeholder.jpg" class="float-right pt-60 pr-72"/>
+    <h1 class="pt-32 text-5xl text-amber-100 text-center">skills:</h1>
+    <%= gen_skill_card( 
+                    assigns, 
+                    "\\images\\python.png", 
+                    "python", 
+                    "skill level:intermediate to expert", 
+                    "3 years of experince, projects:", 
+                    "- circuit making bot", 
+                    "- auto cloud back up using ssh"
+    )%>
+
+    <%= gen_skill_card( 
+                    assigns, 
+                    "\\images\\rust.png", 
+                    "rust", 
+                    "skill level:beginner to intermediate", 
+                    "3 years of experince, projects:", 
+                    "- circuit making bot", 
+                    "- auto cloud back up using ssh" 
+    )%>
+
+    <%= gen_skill_card( 
+                    assigns, 
+                    "\\images\\java.png", 
+                    "java", 
+                    "skill level:intermediate", 
+                    "taught from SENG201", 
+                    "- basic monster fighting game", 
+                    "" 
+    )%>
+
+    <%= gen_skill_card( 
+                    assigns, 
+                    "\\images\\c.png", 
+                    "c", 
+                    "skill level:beginner to intermediate", 
+                    "taught from ENCE260", 
+                    "- ardunio based tracking tunnel", 
+                    "- [TODO], add ENCE260 project" 
+    )%>
+
+    <%= gen_skill_card( 
+                    assigns, 
+                    "\\images\\elixir.png", 
+                    "elixir", 
+                    "skill level:beginner", 
+                    "~2 months experince", 
+                    "- this website", 
+                    "" 
+    )%>
+
+    <%= gen_skill_card( 
+                    assigns, 
+                    "\\images\\bash.png", 
+                    "bash", 
+                    "skill level:intermediate", 
+                    "custom bash script to shorten common commands", 
+                    "", 
+                    "" 
+    )%>
+
+    <%= gen_skill_card( 
+                    assigns, 
+                    "\\images\\linux.png", 
+                    "linux", 
+                    "skill level:intermediate", 
+                    "experinced in both debain and arch based OSs", 
+                    "- used ubuntu for 1 year as daily", 
+                    "- use arch as a second boot" 
+    )%>
+
+    <div id="about_me" class="pt-32 text-5xl text-amber-100 text-center">about_me:</div>
+    <div id="contact" class="pt-32 text-5xl text-amber-100 text-center">like what you see contact me</div>
+
+
+    
 </section>

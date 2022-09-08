@@ -20,7 +20,7 @@ body {
 
 @layer components {
     .navli {
-    	@apply inline-block relative ml-28 bg-pink-500;
+    	@apply inline-block relative pr-7 bg-pink-500;
     }
 
     .nava {

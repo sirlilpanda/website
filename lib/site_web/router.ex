@@ -18,6 +18,7 @@ defmodule SiteWeb.Router do
     pipe_through :browser
     # all routes go in here (ROUTER_LOCATION)
     get "/", HomeController, :index
+    post "/", HomeController, :post
     get "/projects", ProjectsController, :index
     get "/projects/:id", ProjectsController, :show
     get "/mywork", MyworkController, :index

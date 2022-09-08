@@ -12,10 +12,13 @@
             </p>
         </div>
 
-        <img src="\images\placeholder.jpg" class="float-right pl-12 pt-60"/>
+        <div class="float-right pl-12 pt-60">
+            <img src="\images\placeholder.jpg" class="rounded-3xl"/>
+        </div>
     </div>
 
     <h1 class="pt-32 text-5xl text-amber-100 text-center">skills:</h1>
+    
     <%= gen_skill_card( 
                     assigns, 
                     "\\images\\python.png", 
@@ -68,6 +71,16 @@
 
     <%= gen_skill_card( 
                     assigns, 
+                    "\\images\\Phoenix.png", 
+                    "Phoenix", 
+                    "skill level: beginner", 
+                    "~2 months experince", 
+                    "- this very website", 
+                    "" 
+    )%>
+
+    <%= gen_skill_card( 
+                    assigns, 
                     "\\images\\bash.png", 
                     "bash", 
                     "skill level:intermediate", 
@@ -87,8 +100,35 @@
     )%>
 
     <div id="about_me" class="pt-32 text-5xl text-amber-100 text-center">about_me:</div>
-    <div id="contact" class="pt-32 text-5xl text-amber-100 text-center">like what you see contact me</div>
+    <div id="contact" class="pb-30 pt-32 text-5xl text-amber-100 text-center">like what you see contact me</div>
+    
+    <%# <div class = "grid w-screen place-items-center mt-10"> 
+        <form class = "w-[1000px]">
+            <div class="mb-6">
+                <input type="text" placeholder="Your Name" class="contact-box bg-zinc-800 w-full text-amber-100"/>
+            </div>
+            
+            <div class="mb-6">
+                <input type="email" placeholder="Your Email" class="contact-box bg-zinc-800 w-full text-amber-100"/>
+            </div>
 
+            <div class="mb-6">
+                <input type="text" placeholder="Your Phone" class=" contact-box bg-zinc-800 w-full text-amber-100"/>
+            </div>
 
+            <div class="mb-6">
+                <textarea rows="6" placeholder="Your Message" class=" contact-box bg-zinc-800 w-full text-amber-100"></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class=" w-full text-amber-100 bg-primary rounded border border-primary p-3 transition hover:bg-opacity-90">
+                    Send Message
+                </button>
+            </div>
+        </form>
+    
+    </div> %>
+    <%# <%= button("hello", to: "/", submit: :submit, class: "btn") %>
     
 </section>
+<%#  %>
